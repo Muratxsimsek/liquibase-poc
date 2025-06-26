@@ -5,7 +5,8 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="1" author="simsek.murat">
+<!--    <changeSet id="1" author="simsek.murat" context="prod,uat" labels="initial">-->
+    <changeSet id="1" author="simsek.murat" context="prod,uat" >
         <createTable tableName="person">
             <column name="id" type="SERIAL">
                 <constraints primaryKey="true" nullable="false"/>
